@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [AppiumSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Android(failed)">
+    <parameter name="appPackage" value="com.google.android.apps.maps"/>
+    <parameter name="appActivity" value="com.google.android.maps.MapsActivity"/>
+    <parameter name="isRealDevice" value="false"/>
+    <classes>
+      <class name="tests.GoogleMapsTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="openMaps"/>
+          <include name="appSetup"/>
+        </methods>
+      </class> <!-- tests.GoogleMapsTest -->
+    </classes>
+  </test> <!-- Android(failed) -->
+</suite> <!-- Failed suite [AppiumSuite] -->

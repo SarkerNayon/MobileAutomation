@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="AppiumSuite" >
+
+<!--    io.selendroid.testapp-->
+<!--    io.selendroid.testapp.HomeScreenActivity-->
+
+    <test name="Android" >
+        <parameter name="appPackage" value="com.google.android.apps.maps"/>
+        <parameter name="appActivity" value="com.google.android.maps.MapsActivity"/>
+        <!-- <parameter name="appPath" value=""/> -->
+		<parameter name="isRealDevice" value="false"/>
+        <classes>
+            <class
+        </classes>
+    </test>
+</suite>
